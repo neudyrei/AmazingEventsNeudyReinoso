@@ -8,6 +8,10 @@
 header{
   min-height: 8vh;
 }
+
+body{
+  background-color: #f4d58d;
+}
  
 svg{
 width:16px;
@@ -39,13 +43,6 @@ width: 25rem;
 height: 2rem;
 }
 
-/* .box-cards-2{
-min-width: 15rem;
-}
-
-.card-body{
-  min-width: 16rem;
-} */
 
 
 footer{
