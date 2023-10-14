@@ -25,7 +25,6 @@ for (let event of arrayEvents) {
      <div class="card-body">
     <h5 class="card-tittle"> ${event.name}</h5>
     <p class="card-text text-truncate">${event.description}</p>
-    <p class"text-start d-flex">Date: ${event.date}</p>
         <div class="d-flex justify-content-between">
             <p class"text-start d-flex"> $ ${event.price}</p>
             <a href="#" class="btn btn-outline-info">Details </a>
