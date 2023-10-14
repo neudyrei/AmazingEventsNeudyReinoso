@@ -11,17 +11,17 @@
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
 
-<body>
+<body id="body-index">
 
-    <header>
-        <nav class="navbar navbar-expand-md  bg-dark border-bottom border-body" data-bs-theme="dark">
+    <header id="header-index">
+        <nav class="navbar navbar-expand-md  border-bottom border-body"  >
             <div class="container-fluid d-flex">
                 <div class="d-flex justify-content-end">
                     <a class="navbar-brand" href="./index.html">
                         <img src="./Recursos_Amazing_Events_Task_1/amazing_brand.png" alt="Amazing Events" width="200"
                             height="50">
                     </a>
-                    <button class="navbar-toggler btn btn-outline-danger" type="button" data-bs-toggle="collapse"
+                    <button class="navbar-toggler btn btn-outline-info" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
@@ -32,19 +32,19 @@
 
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0 navbar-nav">
 
-                            <li class="nav-item btn btn-outline-danger m-1">
+                            <li class="nav-item btn btn-outline-info m-1">
                                 <a class="nav-link d-flex" aria-current="page" href="./index.html">HOME</a>
                             </li>
-                            <li class="nav-item btn btn-outline-danger m-1">
+                            <li class="nav-item btn btn-outline-info m-1 active">
                                 <a class="nav-link active d-flex" href="#">UPCOMING EVENTS</a>
                             </li>
-                            <li class="nav-item btn btn-outline-danger m-1">
+                            <li class="nav-item btn btn-outline-info m-1">
                                 <a class="nav-link d-flex" href="./PastEvents.html">PAST EVENTS</a>
                             </li>
-                            <li class="nav-item btn btn-outline-danger m-1">
+                            <li class="nav-item btn btn-outline-info m-1">
                                 <a class="nav-link d-flex" href="./Contact.html">CONTACT</a>
                             </li>
-                            <li class="nav-item btn btn-outline-danger m-1">
+                            <li class="nav-item btn btn-outline-info m-1">
                                 <a class="nav-link" href="./Stats.html">STATS</a>
                             </li>
                         </ul>
@@ -138,13 +138,14 @@
 
             <div class="d-flex justify-content-end">
                 <form class="d-flex" role="search">
-                    <input class="form-control me-2 btn btn-outline-danger" type="search" placeholder="Search"
+                    <input class="form-control me-2 btn btn-outline-info" type="search" placeholder="Search"
                         aria-label="Search">
-                    <button type="button" class="btn btn-outline-danger">
+                    <button type="button" class="btn btn-outline-info">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                             class="bi bi-search-heart" viewBox="0 0 16 16">
                             <path d="M6.5 4.482c1.664-1.673 5.825 1.254 0 5.018-5.825-3.764-1.664-6.69 0-5.018Z"></path>
-                            <path d="M13 6.5a6.471 6.471 0 0 1-1.258 3.844c.04.03.078.062.115.098l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1.007 1.007 0 0 1-.1-.115h.002A6.5 6.5 0 1 1 13 6.5ZM6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11Z">
+                            <path
+                                d="M13 6.5a6.471 6.471 0 0 1-1.258 3.844c.04.03.078.062.115.098l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1.007 1.007 0 0 1-.1-.115h.002A6.5 6.5 0 1 1 13 6.5ZM6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11Z">
                             </path>
                         </svg>
                     </button>
@@ -155,99 +156,12 @@
 
 
         <!-- card -->
-        <div class="d-flex flex-wrap justify-content-evenly">
-            <div class="card my-3" style="width: 18rem;">
-                <img src="./Recursos_Amazing_Events_Task_1/music_concert.jpg" class="card-img-top" alt="music concert">
-                <div class="card-body">
-                    <h5 class="card-title">Metallica in concert</h5>
-                    <p class="card-text text-truncate">The only concert of the most emblematic band in the world</p>
-                    <div class="d-flex justify-content-between">
-                        <p> $150</p>
-                        <a href="#" class="btn btn-outline-danger">Details </a>
-                    </div>
-                </div>
-            </div>
-            <div class="card my-3" style="width: 18rem;">
-                <img src="./Recursos_Amazing_Events_Task_1/books.jpg" class="card-img-top" alt="books">
-                <div class="card-body">
-                    <h5 class="card-title">School Book Fair</h5>
-                    <p class="card-text text-truncate">Bring your unused school book and bring the one you need.</p>
+        <div id="cont-cards" class="d-flex flex-wrap justify-content-evenly gap-3 my-3"></div>
 
-                    <div class="d-flex justify-content-between">
-                        <p> $1</p>
-                        <a href="#" class="btn btn-outline-danger">Details </a>
-                    </div>
-                </div>
-            </div>
-            <div class="card my-3" style="width: 18rem;">
-                <img src="./Recursos_Amazing_Events_Task_1/food_fair.jpg" class="card-img-top" height="191"
-                    alt="food fair">
-                <div class="card-body">
-                    <h5 class="card-title">Festival of the collectivities</h5>
-                    <p class="card-text text-truncate">Enjoy your favorite dishes from different countries in a unique
-                        event for the whole family.</p>
-                    <div class="d-flex justify-content-between">
-                        <p>$5</p>
-                        <a href="#" class="btn btn-outline-danger">Details</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card my-3" style="width: 18rem;">
-                <img src="./Recursos_Amazing_Events_Task_1/outing_to_the_museum.jpg" class="card-img-top"
-                    alt="outing to the museum">
-                <div class="card-body">
-                    <h5 class="card-title">Art Exhibition</h5>
-                    <p class="card-text text-truncate">Let's go to the art museum for an incredible tour to learn about
-                        the largest
-                        dinosaurs.</p>
-                    <div class="d-flex justify-content-between">
-                        <p>$15</p>
-                        <a href="#" class="btn btn-outline-danger">Details</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card my-3" style="width: 18rem;">
-                <img src="./Recursos_Amazing_Events_Task_1/marathon.jpg" class="card-img-top" alt="marathon">
-                <div class="card-body">
-                    <h5 class="card-title">10K for life</h5>
-                    <p class="card-text text-truncate">Come and exercise, improve your health and lifestyle.</p>
-                    <div class="d-flex justify-content-between">
-                        <p>$3</p>
-                        <a href="#" class="btn btn-outline-danger">Details</a>
-                    </div>
-                </div>
-            </div>
-            <div class="card my-3" style="width: 18rem;">
-                <img src="./Recursos_Amazing_Events_Task_1/cinema.jpg" class="card-img-top" alt="cinema">
-                <div class="card-body">
-                    <h5 class="Avengers">Avengers</h5>
-                    <p class="card-text text-truncate">Marvel's Avengers 3d premiere the start of an epic saga with your
-                        best
-                        superheroes</p>
-                    <div class="d-flex justify-content-between">
-                        <p>$250</p>
-                        <a href="#" class="btn btn-outline-danger">Details</a>
-                    </div>
-                </div>
-            </div>
-            <div class="card my-3" style="width: 18rem;">
-                <img src="./Recursos_Amazing_Events_Task_1/costume_party.jpg" class="card-img-top" alt="costume">
-                <div class="card-body">
-                    <h5 class="card-title">Halloween Night</h5>
-                    <p class="card-text text-truncate">Come in your scariest costume character to win amazing prizes.
-                    </p>
-                    <div class="d-flex justify-content-between">
-                        <p>$12</p>
-                        <a href="#" class="btn btn-outline-danger">Details</a>
-                    </div>
-                </div>
-            </div>
         </div>
     </main>
 
-    <footer class="d-flex justify-content-around align-items-center bg-danger-subtle text-emphasis-danger">
+    <footer id="footer-index" class="d-flex justify-content-around align-items-center">
         <div class="d-flex">
             <div class="d-flex mx-3">
                 <a href="#">
@@ -276,6 +190,8 @@
             <h6>2023. Created by Neudy Reinoso. All Rights Reserved.</h6>
         </div>
     </footer>
+    <script src="./data.js"></script>
+    <script src="./UpcomingEvents.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>

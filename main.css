@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 
@@ -9,10 +10,16 @@ header{
   min-height: 8vh;
 }
 
-body{
-  background-color: #f4d58d;
+#body-index1, #body-index2{
+  background-color: #e4c1f9;
 }
- 
+#header-index1, #header-index2{
+  background-color: #ff99c8;
+} 
+#footer-index1, #footer-index2{
+background-color: #ff99c8;
+}
+
 svg{
 width:16px;
 height:16px;
@@ -30,7 +37,7 @@ main{
 }
 
 .box-form{
-  min-height: 20rem;
+  min-height: 21rem;
 }
 
 .box-name-mail{
@@ -40,7 +47,7 @@ main{
 
 .box-message{
 width: 25rem;
-height: 2rem;
+height: 8rem;
 }
 
 

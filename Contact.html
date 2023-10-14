@@ -11,17 +11,17 @@
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
 
-<body>
+<body id="body-index1">
 
-    <header>
-        <nav class="navbar navbar-expand-md  bg-dark border-bottom border-body" data-bs-theme="dark">
+    <header id="header-index1">
+        <nav class="navbar navbar-expand-md border-bottom border-body">
             <div class="container-fluid d-flex">
                 <div class="d-flex justify-content-end">
                     <a class="navbar-brand" href="./index.html">
                         <img src="./Recursos_Amazing_Events_Task_1/amazing_brand.png" alt="Amazing Events" width="200"
                             height="50">
                     </a>
-                    <button class="navbar-toggler btn btn-outline-danger" type="button" data-bs-toggle="collapse"
+                    <button class="navbar-toggler btn btn-outline-info" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
@@ -32,19 +32,19 @@
 
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0 navbar-nav">
 
-                            <li class="nav-item btn btn-outline-danger m-1">
+                            <li class="nav-item btn btn-outline-info m-1">
                                 <a class="nav-link d-flex" aria-current="page" href="./index.html">HOME</a>
                             </li>
-                            <li class="nav-item btn btn-outline-danger m-1">
+                            <li class="nav-item btn btn-outline-info m-1">
                                 <a class="nav-link d-flex" href="./UpcomingEvents.html">UPCOMING EVENTS</a>
                             </li>
-                            <li class="nav-item btn btn-outline-danger m-1">
+                            <li class="nav-item btn btn-outline-info m-1">
                                 <a class="nav-link d-flex" href="./PastEvents.html">PAST EVENTS</a>
                             </li>
-                            <li class="nav-item btn btn-outline-danger m-1">
+                            <li class="nav-item btn btn-outline-info m-1 active">
                                 <a class="nav-link active d-flex" href="#">CONTACT</a>
                             </li>
-                            <li class="nav-item btn btn-outline-danger m-1">
+                            <li class="nav-item btn btn-outline-info m-1">
                                 <a class="nav-link" href="./Stats.html">STATS</a>
                             </li>
                         </ul>
@@ -116,29 +116,29 @@
             <form action="" class=" box-form d-flex flex-column align-items-center">
                 <div class="box-name-mail mt-1">
                     <label for="exampleFormControl" class="form-label">Name: </label>
-                    <input type="text" class="form-control border border-danger" id="exampleFormControl"
+                    <input type="text" class="form-control border border-info" id="exampleFormControl"
                         placeholder="María Castaño">
                 </div>
                 <div class="box-name-mail">
                     <label for="exampleFormControlInput1" class="form-label">Email: </label>
-                    <input type="email" class="form-control border border-danger" id="exampleFormControlInput1"
+                    <input type="email" class="form-control border border-info" id="exampleFormControlInput1"
                         placeholder="AmazingEvents@email.com">
                 </div>
                 <div class="box-message">
                     <label for="exampleFormControlTextarea1" class="form-label">Message: </label>
-                    <textarea class="form-control border border-danger" id="exampleFormControlTextarea1"
+                    <textarea class="form-control border border-info" id="exampleFormControlTextarea1"
                         rows="3"></textarea>
                 </div>
 
-                    <div class="box-send d-flex justify-content-end mt-1">
-                        <button type="submit" class="btn btn-outline-danger">Submit</button>
+                    <div class="box-send d-flex flex-end mt-1">
+                        <button type="submit" class="btn btn-outline-info">Submit</button>
                     </div>
             </form>
         </div>
 
     </main>
 
-    <footer class="d-flex justify-content-around align-items-center bg-danger-subtle text-emphasis-danger">
+    <footer id="footer-index1" class="d-flex justify-content-around align-items-center">
         <div class="d-flex">
             <div class="d-flex mx-3">
                 <a href="#">
@@ -167,6 +167,7 @@
             <h6>2023. Created by Neudy Reinoso. All Rights Reserved.</h6>
         </div>
     </footer>
+    <script src="data.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
