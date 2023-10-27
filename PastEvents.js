@@ -42,7 +42,7 @@ function boxCards(arrayEvents) {
         <p class="card-text text-truncate">${event.description}</p>
         <div class="d-flex justify-content-between">
         <p class"text-start d-flex"> $ ${event.price}</p>
-        <a href="#" class="btn btn-outline-info">Details </a>
+        <a href="./Details.html?_id=${event._id}" class="btn btn-outline-info">Details </a>
         </div>
         </div>
         `
