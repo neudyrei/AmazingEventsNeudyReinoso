@@ -36,6 +36,13 @@ main{
   min-height: 84vh;
 }
 
+#image-not-found{
+  display: flex;
+  flex-direction: column;
+width: 37rem;
+height: 25rem;
+}
+
 .box-form{
   min-height: 21rem;
 }

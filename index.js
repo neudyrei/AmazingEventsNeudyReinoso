@@ -14,7 +14,7 @@ const boxSearchPpal = document.getElementById("input-search");
 const contenedor = document.getElementById("cont-cards");
 let categories = []
 categories = Array.from(new Set(arrayEvents.map((event) => event.category.replace(" ", "-"))));
-
+console.log(categories)
 
 function CrearChecks(arrayActividades) {
     arrayActividades.forEach(category => {
@@ -32,38 +32,17 @@ function CrearChecks(arrayActividades) {
 CrearChecks(categories)
 
 
-// function CrearSearch(arrayActividades) {
-//         const boxSearch = document.createElement("div");
-//         boxSearch.classList.add("d-flex", "justify-content-end");
-//         boxSearch.innerHTML = `
-//         <form id="buscador" class="d-flex" role="search">
-//         <input id="input-btn" class="form-control me-2 btn btn-outline-info" type="search" placeholder="Search"
-//             aria-label="Search">
-//         <button id="boton" type="button" class="btn btn-outline-info">
-//             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-//                 class="bi bi-search-heart" viewBox="0 0 16 16">
-//                 <path d="M6.5 4.482c1.664-1.673 5.825 1.254 0 5.018-5.825-3.764-1.664-6.69 0-5.018Z"></path>
-//                 <path
-//                     d="M13 6.5a6.471 6.471 0 0 1-1.258 3.844c.04.03.078.062.115.098l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1.007 1.007 0 0 1-.1-.115h.002A6.5 6.5 0 1 1 13 6.5ZM6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11Z">
-//                 </path>
-//             </svg>
-//         </button>
-//     </form>
-//     `;
-//         boxSearchPpal.appendChild(boxSearch);
-// }
-// CrearSearch(arrayEvents)
-
 function filterCategories(arrayActividades) {
-    let checked = Array.from(document.querySelectorAll('input[type="checkbox"]:checked')).map(boxCheck => boxCheck.value)
+    let elegidos = Array.from(document.querySelectorAll('input[type="checkbox"]:checked')).map(boxCheck => boxCheck.value.replace("-", " "))
 
-
-    if (checked.length > 0) {
-        return arrayActividades.filter(actividad => checked.includes(actividad.category))
+ console.log(elegidos)
+    if (elegidos.length > 0) {
+        return arrayActividades.filter(actividad => elegidos.includes(actividad.category))
 
     } return arrayActividades
-
+   
 }
+
 
 function filterForText(arrayActividades) {
     return arrayActividades.filter(actividad => actividad.name.toLowerCase().includes(boxSearchPpal.value.toLowerCase()))
@@ -76,9 +55,9 @@ function filterForText(arrayActividades) {
 function crearCards(arrayActividades) {
     if (arrayActividades.length == 0) {
         contenedor.innerHTML = `
-        <img src="./Recursos_Amazing_Events_Task_1/page-not-found.jpg" alt="no-encontrado">
+        <img src="./Recursos_Amazing_Events_Task_1/page-not-found.jpg" id="image-not-found" class="img-fluid" alt="no-encontrado">
         <h2>No se encontraron resultados para tu busqueda</h2>`
-    }
+    }else{
     contenedor.innerHTML = ""
     arrayActividades.forEach(event => {
 
@@ -102,6 +81,7 @@ function crearCards(arrayActividades) {
         `;
         contenedor.appendChild(card);
     })
+}
 }
 
 crearCards(arrayEvents);
@@ -134,7 +114,7 @@ boxSearchPpal.addEventListener("keyup", () => {
 //     // console.log(search.value);
 //     const textoIngresado = search.value.toLocaleLowerCase();
 //     for (let event of events) {
-//         let nombre = event.name.toLocaleLowerCase();
+//         let nombre = event.name.toLowerCase();
 //         if (nombre.indexOf(textoIngresado) !== -1) {
 //             resultado.innerHTML += `
 //         <li> ${event.name} - category: ${event.category}</li>

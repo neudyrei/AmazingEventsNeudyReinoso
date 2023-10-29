@@ -1,3 +1,13 @@
+const backgroundBody = document.getElementById("body-detail")
+backgroundBody.style.backgroundColor = ("#e4c1f9");
+
+const backgroundHeader = document.getElementById("header-detail")
+backgroundHeader.style.backgroundColor = ("#ff99c8");
+
+const backgroundFooter = document.getElementById("footer-detail")
+backgroundFooter.style.backgroundColor = ("#ff99c8");
+
+
 const urlParams = new URLSearchParams(window.location.search)
 const id = urlParams.get("_id")
 
