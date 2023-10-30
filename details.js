@@ -10,27 +10,25 @@ backgroundFooter.style.backgroundColor = ("#ff99c8");
 
 const urlParams = new URLSearchParams(window.location.search)
 const id = urlParams.get("_id")
-
 const arrayEvents = data.events;
-
 let eventEncontrado= arrayEvents.find(event => event._id == id)
 const contenedorDetails = document.getElementById("box-details");
 console.log(id)
 
 
 function crearCard (event) {
+    contenedorDetails.classList.add('container', 'shadow', 'd-flex');
     const card = document.createElement("div")
-    card.classList.add("card")
-    card.style.width = "30rem"
-    card.style.color= ("white")
+    card.classList.add("card");
+    // card.style.width = "30rem"
+    // card.style.color= ("re")
     card.innerHTML =`
-
-    <div class="d-flex flex-column justify-content-center align-items-center">
-    <div class="card mb-3 border border-danger" style="max-width: 540px;">
-        <div class="row g-0 d-flex align-items-center">
+    
+        <div class="row no-gutters g-0 d-flex align-items-center border border-danger">
             <div class="col-md-6">
-                <img src=${event.image} class="img-fluid rounded-start" alt="music concert">
+                <img src=${event.image} class="img-fluid card-img h-100" alt="music concert">
             </div>
+        
             <div class="col-md-6">
                 <div class="card-body">
                     <h5 class="card-title">${event.name}</h5>
@@ -47,7 +45,7 @@ function crearCard (event) {
                 </div>
             </div>
         </div>
-    </div>
+   
     `
     contenedorDetails.appendChild(card)
 }
