@@ -10,13 +10,13 @@ header{
   min-height: 8vh;
 }
 
-#body-index1, #body-index2{
+#body-contact, #body-index2{
   background-color: #e4c1f9;
 }
-#header-index1, #header-index2{
+#header-contact, #header-index2{
   background-color: #ff99c8;
 } 
-#footer-index1, #footer-index2{
+#footer-contact, #footer-index2{
 background-color: #ff99c8;
 }
 
